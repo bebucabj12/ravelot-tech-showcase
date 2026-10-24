@@ -1,0 +1,31 @@
+{
+  "name": "ravelot-tech-showcase",
+  "version": "0.1.0",
+  "private": true,
+  "type": "module",
+  "description": "Selected, standalone scheduling and React examples extracted from RAVELOT.",
+  "engines": {
+    "node": ">=24"
+  },
+  "scripts": {
+    "typecheck": "tsc --noEmit",
+    "build": "tsc",
+    "test": "npm run build && node --import ./scripts/block-network.mjs --test build/tests/*.test.js",
+    "examples": "npm run build && node --import ./scripts/block-network.mjs build/examples/run.js",
+    "audit": "node scripts/audit-public-files.mjs",
+    "check": "npm run typecheck && npm test && npm run examples && npm run audit"
+  },
+  "dependencies": {
+    "i18next": "26.4.7",
+    "react": "19.3.0",
+    "react-dom": "19.3.0",
+    "react-i18next": "17.0.20"
+  },
+  "devDependencies": {
+    "@types/node": "24.13.6",
+    "@types/react": "19.3.0",
+    "@types/react-dom": "19.3.0",
+    "typescript": "6.0.3"
+  },
+  "license": "UNLICENSED"
+}

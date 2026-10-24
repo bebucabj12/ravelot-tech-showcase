@@ -1,0 +1,28 @@
+/* Independent presentation: no application themes, assets or global rules. */
+.showcase {
+  max-width: 42rem;
+  margin: 2rem auto;
+  padding: 0 1rem;
+  color: #262626;
+  background: #fff;
+  font-family: system-ui, sans-serif;
+}
+.showcase .event-card {
+  display: grid;
+  gap: .5rem;
+  width: 100%;
+  margin: 1rem 0;
+  padding: 1rem;
+  border: 1px solid #b8b8b8;
+  border-radius: .5rem;
+  color: inherit;
+  background: #fafafa;
+  text-align: left;
+  font: inherit;
+  cursor: pointer;
+  overflow-wrap: anywhere;
+}
+.showcase .event-card-main { display: grid; gap: .25rem; }
+.showcase .event-card-date,
+.showcase .event-card-meta { color: #505050; font-size: .875rem; }
+.showcase .event-card:focus-visible { outline: 3px solid #3755a3; outline-offset: 3px; }
